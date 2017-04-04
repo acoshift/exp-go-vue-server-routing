@@ -1,0 +1,12 @@
+{{define "components"}}
+<script src="/-/components/book.js"></script>
+{{end}}
+
+{{define "app"}}
+<h1>This is View</h1>
+{{if .}}
+<book :book="{{json .}}"></book>
+{{else}}
+<h4>Book not found</h4>
+{{end}}
+{{end}}

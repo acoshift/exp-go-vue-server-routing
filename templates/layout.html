@@ -1,0 +1,18 @@
+{{define "root" -}}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Golang Server-side Routing with Vue.js Components</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="/-/components/top-menu.js"></script>
+    {{template "components" $}}
+  </head>
+  <body>
+    <div id="app">
+      <top-menu></top-menu>
+      {{template "app" $}}
+    </div>
+    <script>new Vue().$mount('#app')</script>
+  </body>
+</html>
+{{- end}}

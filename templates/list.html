@@ -1,0 +1,8 @@
+{{define "components"}}
+<script src="/-/components/books.js"></script>
+{{end}}
+
+{{define "app"}}
+<h1>This is List</h1>
+<books :list="{{json .books}}"></books>
+{{end}}
